@@ -5,7 +5,7 @@ window.FOCUSLOCK = {
   version: "1.3.0", build: 25, apkSizeBytes: 25016653, releaseDate: "2026-10-01",
   minAndroid: "Android 7.0 (API 24) or newer",
   github: "https://github.com/Zihad077/FocusLock",
-  developer: "Zihad", developerSite: "https://codesbyzd.vercel.app",
+  developer: "Zihad", developerSite: "https://focuslockz.vercel.app",
   contactEmail: "", /* [CONFIG NEEDED] add a support email here */
   premium: { payment: "Binance Pay (USDT)", plans: [
     {icon:"⚡",name:"Weekly",days:7,price:"$0.29"},
