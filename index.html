@@ -1,202 +1,26 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>FocusLock: App limits and focus for Android</title>
-  <meta name="description" content="Set daily limits for distracting apps, lock them when time is up, and unlock only on purpose. Free Android app.">
-  <link rel="canonical" href="https://focuslockz.vercel.app/">
-  <meta name="theme-color" content="#070b12">
-  
-  <!-- Open Graph / Facebook / WhatsApp / Telegram / LinkedIn -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="FocusLock">
-  <meta property="og:title" content="FocusLock: App limits and focus for Android">
-  <meta property="og:description" content="Set daily limits for distracting apps, lock them when time is up, and unlock only on purpose. Free Android app.">
-  <meta property="og:url" content="https://focuslockz.vercel.app/">
-  <meta property="og:image" content="https://focuslockz.vercel.app/assets/images/ogimg.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="FocusLock - Make distraction harder. Make focus easier.">
-
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="FocusLock: App limits and focus for Android">
-  <meta name="twitter:description" content="Set daily limits for distracting apps, lock them when time is up, and unlock only on purpose. Free Android app.">
-  <meta name="twitter:image" content="https://focuslockz.vercel.app/assets/images/ogimg.jpg">
-  <meta name="twitter:image:alt" content="FocusLock - Make distraction harder. Make focus easier.">
-
-  <link rel="icon" href="favicon/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" href="favicon/favicon-32.png">
-  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
-  <link rel="manifest" href="manifest.json">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;600&display=swap">
-  <link rel="stylesheet" href="css/style.css">
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "FocusLock",
-    "operatingSystem": "Android",
-    "applicationCategory": "ProductivityApplication",
-    "softwareVersion": "1.3.0",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "url": "https://focuslockz.vercel.app/"
-  }
-  </script>
-</head>
-<body data-base="">
-  <header>
-    <div class="w nav">
-      <a class="logo" href="index.html"><img src="assets/icons/icon-192.png" width="32" height="32" alt="">FocusLock</a>
-      <nav aria-label="Main">
-        <ul id="menu">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="download.html">Download</a></li>
-          <li><a href="premium.html">Premium</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-      <a class="btn sm" data-apk href="/downloads/FocusLock.apk">Download</a>
-      <button id="mb" aria-expanded="false" aria-controls="menu" aria-label="Menu">☰</button>
-    </div>
-  </header>
-  
-  <main>
-    <section>
-      <div class="w hero">
-        <div>
-          <h1>Make distraction harder. Make focus easier.</h1>
-          <p>FocusLock puts a calm barrier between you and the apps that waste your time. Choose the apps, set the limits, and stay on track.</p>
-          <div class="row">
-            <a class="btn" data-apk href="/downloads/FocusLock.apk">Download FocusLock</a>
-            <a class="btn g" href="features.html">Explore features</a>
-          </div>
-        </div>
-        <div class="rings">
-          <div class="phone">
-            <img src="assets/screenshots/home.png" width="720" height="1600" alt="FocusLock Home screen" onerror="this.parentNode.hidden=true">
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section>
-      <div class="w">
-        <h2>Why FocusLock</h2>
-        <div class="grid">
-          <div class="card"><h3>Your data stays on your phone</h3><p>Usage records, limits and goals are stored on the device. No account is needed.</p></div>
-          <div class="card"><h3>Built for intent</h3><p>Time is not just cut off. Unlocking takes a deliberate step you choose.</p></div>
-          <div class="card"><h3>Safe by design</h3><p>Phone calls and emergency calls are never blocked, and emergency unlocks exist.</p></div>
-        </div>
-      </div>
-    </section>
-    
-    <section>
-      <div class="w">
-        <h2>What it does</h2>
-        <div class="grid">
-          <div class="card"><h3>App time limits</h3><p>Set a daily limit for each app you choose.</p></div>
-          <div class="card"><h3>Automatic app locking</h3><p>When the limit is reached, FocusLock shows a block screen over the app.</p></div>
-          <div class="card"><h3>Focus challenges</h3><p>Unlock with a math problem, a countdown, typing a sentence, or a PIN.</p></div>
-          <div class="card"><h3>Usage tracking</h3><p>See screen time, trends, goals and streaks.</p></div>
-        </div>
-      </div>
-    </section>
-    
-    <section>
-      <div class="w">
-        <h2>How it works</h2>
-        <ol class="steps">
-          <li><span><b style="color:var(--t)">Pick your apps.</b> Choose the apps you want to control and set a daily limit.</span></li>
-          <li><span><b style="color:var(--t)">FocusLock keeps watch.</b> It notices when a limited app is opened and warns you as the limit gets close.</span></li>
-          <li><span><b style="color:var(--t)">Time is up, a pause begins.</b> A block screen appears. Unlock only by completing a challenge.</span></li>
-        </ol>
-      </div>
-    </section>
-    
-    <section>
-      <div class="w split">
-        <div>
-          <h2>A calm block screen</h2>
-          <p>When your limit is reached you see a clear message, not a punishment. Wait, breathe, or complete a challenge.</p>
-          <a class="btn g" href="features.html">See all features</a>
-        </div>
-        <div class="phone">
-          <img src="assets/screenshots/block.png" width="720" height="1600" alt="FocusLock lock screen shown when a daily limit is reached" loading="lazy" onerror="this.parentNode.hidden=true">
-        </div>
-      </div>
-    </section>
-    
-    <section>
-      <div class="w">
-        <h2>Premium removes ads</h2>
-        <p>The free app shows ads. Premium turns them off. Pay with USDT through Binance Pay.</p>
-        <div class="grid" data-plans></div>
-        <div class="row"><a class="btn g" href="premium.html">How Premium works</a></div>
-      </div>
-    </section>
-    
-    <section>
-      <div class="w">
-        <h2>Latest from the blog</h2>
-        <div class="grid" id="latest"></div>
-      </div>
-    </section>
-    
-    <section>
-      <div class="w">
-        <div class="cta">
-          <h2>Take back your time</h2>
-          <p>Free for Android. No account needed.</p>
-          <a class="btn" data-apk href="/downloads/FocusLock.apk">Download FocusLock</a>
-        </div>
-      </div>
-    </section>
-  </main>
-  
-  <footer>
-    <div class="w fg">
-      <div>
-        <h3>FocusLock</h3>
-        <p>Set limits for distracting apps, lock them when time is up, and unlock only on purpose. Made for Android.</p>
-      </div>
-      <div>
-        <h3>Product</h3>
-        <a href="features.html">Features</a>
-        <a href="download.html">Download</a>
-        <a href="premium.html">Premium</a>
-      </div>
-      <div>
-        <h3>Resources</h3>
-        <a href="blog.html">Blog</a>
-        <a href="about.html">About</a>
-        <a data-gh href="https://github.com/Zihad077/FocusLock" target="_blank" rel="noopener">GitHub</a>
-      </div>
-      <div>
-        <h3>Legal</h3>
-        <a href="privacy.html">Privacy policy</a>
-        <a href="terms.html">Terms</a>
-        <a data-mail href="about.html#contact">Contact</a>
-      </div>
-    </div>
-    <div class="w" style="margin-top:28px">
-      © <span data-cfg="year">2026</span> FocusLock by <a data-dev href="https://zihad07.vercel.app" target="_blank" rel="noopener">Zihad</a>.
-    </div>
-  </footer>
-  
-  <script src="js/config.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/blog.js" data-base=""></script>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FocusLock: App limits and focus for Android</title><meta name="description" content="Set daily limits for distracting apps, lock them when time is up, and unlock only on purpose. Free Android app, no account."><link rel="canonical" href="https://focuslockz.vercel.app/"><meta name="theme-color" content="#070b12">
+<meta property="og:type" content="website"><meta property="og:site_name" content="FocusLock"><meta property="og:title" content="FocusLock: App limits and focus for Android"><meta property="og:description" content="Set daily limits for distracting apps, lock them when time is up, and unlock only on purpose. Free Android app, no account."><meta property="og:url" content="https://focuslockz.vercel.app/"><meta property="og:image" content="https://focuslockz.vercel.app/assets/images/ogimg.jpg">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="FocusLock: App limits and focus for Android"><meta name="twitter:description" content="Set daily limits for distracting apps, lock them when time is up, and unlock only on purpose. Free Android app, no account."><meta name="twitter:image" content="https://focuslockz.vercel.app/assets/images/ogimg.jpg">
+<link rel="icon" href="favicon/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="favicon/favicon-32.png"><link rel="apple-touch-icon" href="favicon/apple-touch-icon.png"><link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "FocusLock", "operatingSystem": "Android", "applicationCategory": "ProductivityApplication", "softwareVersion": "1.3.2", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://focuslockz.vercel.app/"}</script></head><body data-base=""><header><div class="w nav"><a class="logo" href="index.html"><img src="assets/icons/icon-192.png" width="32" height="32" alt="">FocusLock</a>
+<nav aria-label="Main"><ul id="menu"><li><a href="index.html" aria-current=page>Home</a></li><li><a href="features.html">Features</a></li><li><a href="tour.html">App Tour</a></li><li><a href="download.html">Download</a></li><li><a href="premium.html">Premium</a></li><li><a href="blog.html">Blog</a></li><li><a href="about.html">About</a></li></ul></nav><a class="btn sm" data-apk href="/downloads/FocusLock.apk">Download</a><button id="mb" aria-expanded="false" aria-controls="menu" aria-label="Menu">☰</button></div></header><main>
+<section class="hero-s"><div class="w hero"><div><p class="eyebrow">Free for Android</p><h1>Take your time back from distracting apps.</h1><p class="lead">FocusLock puts a calm barrier between you and the apps that eat your day. Pick the apps, set the limits, and unlock only on purpose.</p><div class="row"><a class="btn " data-apk href="/downloads/FocusLock.apk">Download FocusLock</a><a class="btn g" href="features.html">Explore features</a></div><p class="note">Free · No account · <span data-cfg="android"></span></p></div>
+<div class="duo hero-duo"><div class="phone"><img src="assets/screenshots/home.webp" width="520" height="1040" alt="FocusLock Home screen with focus score, streak and active limits" onerror="this.parentNode.hidden=true"></div><div class="phone"><img src="assets/screenshots/block.webp" width="520" height="1040" alt="FocusLock block screen shown during Focus mode" onerror="this.parentNode.hidden=true"></div></div></div></section>
+<section class="tight"><div class="w stats"><div><b>4</b><span>Unlock challenges</span></div><div><b>6</b><span>App languages</span></div><div><b>6</b><span>Animated themes</span></div><div><b>0</b><span>Accounts needed</span></div></div></section>
+<section><div class="w"><p class="eyebrow">Why FocusLock</p><h2>Built to help, not to nag</h2><div class="grid"><div class="card"><div class=ic>🔒</div><h3>Your data stays on your phone</h3><p>Limits, usage and goals are stored on the device. There is no sign-up.</p></div><div class="card"><div class=ic>🎯</div><h3>Unlocking takes intent</h3><p>Time is not just cut off. You choose a small challenge that gives you a moment to decide.</p></div><div class="card"><div class=ic>🛟</div><h3>Safe by design</h3><p>Calls and emergency functions are never blocked, and emergency bypasses exist.</p></div></div></div></section>
+<section><div class="w"><p class="eyebrow">What it does</p><h2>Everything you need, nothing you do not</h2><div class="grid"><div class="card"><div class=ic>⏱️</div><h3>App time limits</h3><p>Set a daily limit for each app. Use templates and schedules to save time.</p></div><div class="card"><div class=ic>🛡️</div><h3>Automatic app locking</h3><p>When the limit is reached, a block screen covers the app until you decide what to do.</p></div><div class="card"><div class=ic>🧘</div><h3>Focus mode</h3><p>Lock distractions for a session from 15 minutes to 2 hours.</p></div><div class="card"><div class=ic>🧩</div><h3>Unlock challenges</h3><p>Math, patience countdown, typing a sentence, or your PIN.</p></div><div class="card"><div class=ic>📊</div><h3>Usage tracking</h3><p>See screen time, insights, goals, streaks and trends.</p></div><div class="card"><div class=ic>🎨</div><h3>Themes and languages</h3><p>Six animated themes and six app languages, including Bangla.</p></div></div><div class="row"><a class="btn g" href="features.html">See every feature</a></div></div></section>
+<section><div class="w"><p class="eyebrow">How it works</p><h2>Six simple steps</h2><ol class="steps"><li><span><b>Select.</b> Choose the apps you want to control.</span></li><li><span><b>Set.</b> Set a daily time limit for each one.</span></li><li><span><b>Monitor.</b> FocusLock tracks how long each app is used.</span></li><li><span><b>Warn.</b> You get a heads-up when a limit is close.</span></li><li><span><b>Block.</b> When time is up, a block screen covers the app.</span></li><li><span><b>Decide.</b> Stay locked in, or complete a challenge you chose to unlock.</span></li></ol></div></section>
+<section><div class="w"><p class="eyebrow">App tour</p><h2>See FocusLock in action</h2><p class="lead">Real screens from the app. <a href="tour.html">Take the full tour</a>.</p><div class="rail" tabindex="0" aria-label="App screenshots"><figure class="shot"><div class="phone"><img src="assets/screenshots/home.webp" width="520" height="1040" alt="FocusLock Home screen" loading=lazy onerror="this.parentNode.hidden=true"></div><figcaption>Home</figcaption></figure><figure class="shot"><div class="phone"><img src="assets/screenshots/apps.webp" width="520" height="1040" alt="FocusLock App Limits screen listing apps with switches" loading=lazy onerror="this.parentNode.hidden=true"></div><figcaption>App Limits</figcaption></figure><figure class="shot"><div class="phone"><img src="assets/screenshots/focus.webp" width="520" height="1040" alt="FocusLock Focus Mode timer screen" loading=lazy onerror="this.parentNode.hidden=true"></div><figcaption>Focus Mode</figcaption></figure><figure class="shot"><div class="phone"><img src="assets/screenshots/block.webp" width="520" height="1040" alt="FocusLock block screen" loading=lazy onerror="this.parentNode.hidden=true"></div><figcaption>Block screen</figcaption></figure><figure class="shot"><div class="phone"><img src="assets/screenshots/stats.webp" width="520" height="1040" alt="FocusLock screen time and stats" loading=lazy onerror="this.parentNode.hidden=true"></div><figcaption>Stats</figcaption></figure><figure class="shot"><div class="phone"><img src="assets/screenshots/settings.webp" width="520" height="1040" alt="FocusLock Settings screen" loading=lazy onerror="this.parentNode.hidden=true"></div><figcaption>Settings</figcaption></figure></div></div></section>
+<section><div class="w split"><div class="prose"><p class="eyebrow">Unlock challenges</p><h2>A pause that works</h2><p class="lead">When you want more time, you complete a short challenge you turned on. It is just enough friction to ask: do I really need this?</p><ul><li>Mental math</li><li>Patience and stillness countdown</li><li>Mindful typing of a sentence</li><li>Your own PIN</li></ul><a class="btn g" href="features.html#challenges">How challenges work</a></div><div class="duo three"><div class="phone"><img src="assets/screenshots/math.webp" width="520" height="1040" alt="Mental math unlock challenge" loading=lazy onerror="this.parentNode.hidden=true"></div><div class="phone"><img src="assets/screenshots/patience.webp" width="520" height="1040" alt="Patience countdown unlock challenge" loading=lazy onerror="this.parentNode.hidden=true"></div><div class="phone"><img src="assets/screenshots/typing.webp" width="520" height="1040" alt="Mindful typing unlock challenge" loading=lazy onerror="this.parentNode.hidden=true"></div></div></div></section>
+<section><div class="w"><p class="eyebrow">Premium</p><h2>Remove ads, keep everything else</h2><p class="lead">The free app shows ads. Premium turns them off. Pay with USDT through Binance Pay.</p><div class="grid" data-plans></div><div class="row"><a class="btn g" href="premium.html">See how Premium works</a></div></div></section>
+<section><div class="w privacy-band"><div><p class="eyebrow">Privacy first</p><h2>No account. No upload of your usage.</h2><p>FocusLock keeps your data on your device and asks only for the permissions it needs to do its job.</p><a class="btn g" href="privacy.html">Read the privacy page</a></div><ul class="ticks"><li>No sign-up or login</li><li>Usage data stays on the phone</li><li>Calls and emergencies never blocked</li><li>You can see why each permission is needed</li></ul></div></section>
+<section><div class="w prose"><p class="eyebrow">FAQ</p><h2>Quick answers</h2><details><summary>What is FocusLock?</summary><p>FocusLock is a free Android app. You pick distracting apps, set a daily limit for each, and FocusLock puts a block screen over them when time is up.</p></details><details><summary>Is FocusLock free?</summary><p>Yes. The free version shows ads. Premium removes the ads and nothing else changes.</p></details><details><summary>Do I need an account?</summary><p>No. There is no sign-up. Your limits and usage data stay on your phone.</p></details><details><summary>What permissions does it need, and why?</summary><p>Usage access to measure app time, the Accessibility service to see which app is open, Display over other apps to show the block screen, and Notifications for warnings. Do Not Disturb access is optional and only used in Focus mode. See the <a href='privacy.html'>privacy page</a> for details.</p></details><details><summary>Can I set different limits for different apps?</summary><p>Yes. Every app has its own switch and its own daily limit. You can also use limit templates and schedules.</p></details><a class="btn g" href="faq.html">More questions</a></div></section>
+<section><div class="w"><p class="eyebrow">Blog</p><h2>Latest from the blog</h2><div class="grid" id="latest"></div></div></section><section><div class="w"><div class="cta"><h2>Take back your time</h2><p>Free for Android. No account needed.</p><div class="row c"><a class="btn " data-apk href="/downloads/FocusLock.apk">Download FocusLock</a><a class="btn g" href="tour.html">Take the app tour</a></div></div></div></section></main><footer><div class="w fg"><div><h3>FocusLock</h3><p>Set limits for distracting apps, lock them when time is up, and unlock only on purpose. Made for Android.</p></div>
+<div><h3>Product</h3><a href="features.html">Features</a><a href="tour.html">App Tour</a><a href="download.html">Download</a><a href="premium.html">Premium</a></div>
+<div><h3>Resources</h3><a href="blog.html">Blog</a><a href="faq.html">FAQ</a><a href="about.html">About</a><a data-gh href="https://github.com/Zihad077/FocusLock" target="_blank" rel="noopener">GitHub</a></div>
+<div><h3>Legal</h3><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms</a><a data-mail href="about.html#contact">Contact</a></div></div>
+<div class="w copy">© <span data-cfg="year">2026</span> FocusLock by <a data-dev href="https://zihad07.vercel.app" target="_blank" rel="noopener">Zihad</a>.</div></footer>
+<script src="js/config.js"></script><script src="js/main.js"></script><script src="js/blog.js" data-base=""></script></body></html>

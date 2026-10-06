@@ -1,0 +1,92 @@
+[
+  {
+    "title": "7 simple ways to reduce screen time",
+    "slug": "reduce-screen-time",
+    "description": "Practical steps to spend less time on distracting apps, and how app limits can help.",
+    "category": "Habits",
+    "date": "2026-09-20",
+    "image": "assets/images/bg-aurora.webp",
+    "url": "posts/reduce-screen-time.html"
+  },
+  {
+    "title": "Why unlocking an app should take a little effort",
+    "slug": "why-unlocking-should-take-effort",
+    "description": "A short pause between the urge and the app is often enough to change your mind.",
+    "category": "Focus",
+    "date": "2026-09-22",
+    "image": "assets/images/bg-cyber.webp",
+    "url": "posts/why-unlocking-should-take-effort.html"
+  },
+  {
+    "title": "How to run a deep focus session",
+    "slug": "run-a-deep-focus-session",
+    "description": "A simple routine for 15 minutes to 2 hours of work without distractions.",
+    "category": "Productivity",
+    "date": "2026-09-24",
+    "image": "assets/images/bg-ocean.webp",
+    "url": "posts/run-a-deep-focus-session.html"
+  },
+  {
+    "title": "How app limits work on Android",
+    "slug": "how-app-limits-work-on-android",
+    "description": "What happens behind the scenes when an app limit is reached, and why FocusLock asks for certain permissions.",
+    "category": "Android",
+    "date": "2026-09-26",
+    "image": "assets/images/bg-sakura.webp",
+    "url": "posts/how-app-limits-work-on-android.html"
+  },
+  {
+    "title": "How to avoid endless scrolling",
+    "slug": "avoid-endless-scrolling",
+    "description": "Feeds have no end on purpose. Here is how to add one yourself.",
+    "category": "Habits",
+    "date": "2026-09-28",
+    "image": "assets/images/bg-cyber.webp",
+    "url": "posts/avoid-endless-scrolling.html"
+  },
+  {
+    "title": "How to build a focused Android setup",
+    "slug": "build-a-focused-android-setup",
+    "description": "A few settings that make your phone calmer.",
+    "category": "Android",
+    "date": "2026-09-30",
+    "image": "assets/images/bg-aurora.webp",
+    "url": "posts/build-a-focused-android-setup.html"
+  },
+  {
+    "title": "How to set your first limit in FocusLock",
+    "slug": "set-your-first-limit-in-focuslock",
+    "description": "A step-by-step guide to installing FocusLock and setting your first app limit.",
+    "category": "Tutorials",
+    "date": "2026-10-01",
+    "image": "assets/images/bg-ocean.webp",
+    "url": "posts/set-your-first-limit-in-focuslock.html"
+  },
+  {
+    "title": "Choosing the right daily limit",
+    "slug": "choosing-the-right-daily-limit",
+    "description": "Too strict and you give up. Too loose and nothing changes.",
+    "category": "Productivity",
+    "date": "2026-10-02",
+    "image": "assets/images/bg-sakura.webp",
+    "url": "posts/choosing-the-right-daily-limit.html"
+  },
+  {
+    "title": "Using streaks to stay consistent",
+    "slug": "using-streaks-to-stay-consistent",
+    "description": "A streak is a simple way to keep a habit going.",
+    "category": "Habits",
+    "date": "2026-10-03",
+    "image": "assets/images/bg-cyber.webp",
+    "url": "posts/using-streaks-to-stay-consistent.html"
+  },
+  {
+    "title": "Phone-free mornings and evenings",
+    "slug": "phone-free-mornings-and-evenings",
+    "description": "Small boundaries around the start and end of your day.",
+    "category": "Digital Wellbeing",
+    "date": "2026-10-04",
+    "image": "assets/images/bg-aurora.webp",
+    "url": "posts/phone-free-mornings-and-evenings.html"
+  }
+]

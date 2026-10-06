@@ -1,0 +1,13 @@
+(function(){var C=window.FOCUSLOCK,$=function(s){return[].slice.call(document.querySelectorAll(s))};
+var mb=document.getElementById("mb"),ul=document.getElementById("menu");
+mb&&mb.addEventListener("click",function(){var o=ul.classList.toggle("open");mb.setAttribute("aria-expanded",o)});
+if(!C)return;
+var v={version:"v"+C.version,build:C.build,size:(C.apkSizeBytes/1048576).toFixed(1)+" MB",date:new Date(C.releaseDate).toLocaleDateString("en",{year:"numeric",month:"long",day:"numeric"}),android:C.minAndroid,sha:C.sha256||"",year:new Date().getFullYear(),email:C.contactEmail||"[CONFIG NEEDED: contact email in js/config.js]",dev:C.developer};
+$("[data-cfg]").forEach(function(e){e.textContent=v[e.dataset.cfg]});
+$("[data-copy]").forEach(function(b){b.addEventListener("click",function(){var t=document.querySelector(b.dataset.copy).textContent,o=b.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent="Copied"},function(){b.textContent="Select and copy manually"});setTimeout(function(){b.textContent=o},1800)})});
+$("[data-apk]").forEach(function(a){a.href=C.apkUrl;a.rel="noopener"});
+$("[data-gh]").forEach(function(a){a.href=C.github;a.target="_blank";a.rel="noopener"});
+$("[data-dev]").forEach(function(a){a.href=C.developerSite;a.target="_blank";a.rel="noopener"});
+$("[data-mail]").forEach(function(a){if(C.contactEmail){a.href="mailto:"+C.contactEmail;a.textContent=C.contactEmail}});
+$("[data-plans]").forEach(function(h){h.innerHTML=C.premium.plans.map(function(p){return'<div class="card plan'+(p.best?" best":"")+'"><div>'+p.icon+'</div><h3>'+p.name+'</h3><p>'+p.days+' days</p><div class="pr">'+p.price+'</div>'+(p.best?"<small>Most popular</small>":"")+"</div>"}).join("")});
+})();
